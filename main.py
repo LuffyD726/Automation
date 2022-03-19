@@ -9,25 +9,6 @@ from PyQt5.QtWidgets import QMainWindow, QApplication
 import sys
 
 
-# Create The Window
-class MainWindow(QMainWindow):
-    def window(self):
-
-        app = QApplication(sys.argv)
-        self = QMainWindow()
-        self.setGeometry(200, 200, 300, 400)
-        self.setWindowTitle("EzBaraka")
-
-        MainLable = QtWidgets.QLabel(self)
-        MainLable.setText("שלום לך בחור נחמד")
-
-
-        self.show()
-        sys.exit(app.exec_())
-
-    window(self=1)
-
-
 s = Service("C:\Program Files (x86)\chromedriver.exe")
 URL = input("pls enter the URL \n")
 
